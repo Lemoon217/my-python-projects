@@ -1,13 +1,5 @@
 import tkinter as tk
 
-# словарь операций
-operations = {
-    "+": lambda a, b: a + b,
-    "-": lambda a, b: a - b,
-    "*": lambda a, b: a * b,
-    "/": lambda a, b: a / b if b != 0 else "Ошибка"
-}
-
 # функция для нажатия кнопок
 def click(symbol):
     current = entry.get()
@@ -18,26 +10,12 @@ def click(symbol):
 def clear():
     entry.delete(0, tk.END)
 
-# вычисление БЕЗ eval
+# вычисление
 def calculate():
     try:
-        text = entry.get()
-
-        for op in operations:
-            if op in text:
-                a, b = text.split(op)
-                a = float(a)
-                b = float(b)
-
-                result = operations[op](a, b)
-
-                entry.delete(0, tk.END)
-                entry.insert(0, str(result))
-                return
-
+        result = eval(entry.get())
         entry.delete(0, tk.END)
-        entry.insert(0, "Ошибка")
-
+        entry.insert(0, str(result))
     except:
         entry.delete(0, tk.END)
         entry.insert(0, "Ошибка")
@@ -66,12 +44,12 @@ row = 0
 col = 0
 
 for button in buttons:
+    action = lambda x=button: click(x)
+
     if button == "C":
         action = clear
     elif button == "=":
         action = calculate
-    else:
-        action = lambda x=button: click(x)
 
     tk.Button(frame, text=button, width=5, height=2, font=("Arial", 14),
               command=action).grid(row=row, column=col, padx=5, pady=5)
@@ -81,4 +59,5 @@ for button in buttons:
         col = 0
         row += 1
 
+# запуск
 window.mainloop()
