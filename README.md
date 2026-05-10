@@ -1,38 +1,38 @@
 My Python Projects
 
-Привет! 👋
-Это мой репозиторий с проектами на Python.
-Я изучаю программирование и создаю простые приложения и игры.
+Hi! 👋
+This is my repository with Python projects.
+I am learning programming and creating simple applications and games.
 
-📂 Проекты
-🧮 Калькулятор (GUI)
+📂 Projects
+🧮 Calculator (GUI)
 
-Простой графический калькулятор на Python с использованием Tkinter.
+A simple graphical calculator in Python using Tkinter.
 
-Возможности:
+Features:
 
-Сложение, вычитание, умножение, деление
-Удобный интерфейс
-Обработка ошибок
+Addition, subtraction, multiplication, division
+User-friendly interface
+Error handling
 
-📁 Папка: calculator
+📁 Folder: calculator
 
-🎮 Угадай число
+🎮 Guess the Number
 
-Небольшая игра, где нужно угадать число от 1 до 10.
+A small game where you have to guess a number from 1 to 10.
 
-Особенности:
+Features:
 
-Ограниченное количество попыток
-Подсказки (больше / меньше)
-Кнопка "Заново"
+Limited number of attempts
+Hints (higher / lower)
+“Restart” button
 
-📁 Папка: guess_game
+📁 Folder: guess_game
 
-🛠 Используемые технологии
+🛠 Technologies Used
 Python 🐍
 Tkinter (GUI)
-📈 Мои цели
-Изучить основы Python
-Освоить работу с Git и GitHub
-Создавать более сложные проекты
+📈 My Goals
+Learn Python fundamentals
+Master Git and GitHub
+Build more complex projects
